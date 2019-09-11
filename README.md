@@ -1,6 +1,6 @@
 # Video Master Firefox Extension
 
-![Screenshot](https://picasaweb.google.com/106095461922210162950/6735363178526225681#6735363185757356898 "Video Master Firefox Extension")
+![Screenshot](https://imgur.com/nBAdHuZ)
 
 This small addon has been wrote using Firefox extension framework.
 You can download this extension from [here](https://addons.mozilla.org/en-US/firefox/addon/video-master/)
