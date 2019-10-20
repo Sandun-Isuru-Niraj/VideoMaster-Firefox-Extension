@@ -1,8 +1,8 @@
 
 //Runs wen selecting the Youtube Tab
-browser.tabs.onActivated.addListener(function (activeInfo) {
+chrome.tabs.onActivated.addListener(function (activeInfo) {
 
-    browser.tabs.query({ 'active': true, 'lastFocusedWindow': true }, function (tabs) {
+    chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, function (tabs) {
 
         //Check whether URL formats are matching
         var url = tabs[0].url;
@@ -24,7 +24,7 @@ browser.tabs.onActivated.addListener(function (activeInfo) {
                 });
 
         } else {
-            browser.browserAction.setBadgeText({ text: '' });
+            chrome.browserAction.setBadgeText({ text: '' });
             localStorage.clear()
         }
 
@@ -58,7 +58,7 @@ browser.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
                 });
 
         }else {
-            browser.browserAction.setBadgeText({ text: '' });
+            chrome.browserAction.setBadgeText({ text: '' });
             localStorage.clear()
         }
 
